@@ -1,15 +1,37 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+
+import { useAppDisptach, useAppSelector } from "../../features/store";
+import Quiz from "./components/Quiz/Quiz";
 
 const Home = () => {
-const navigate = useNavigate();
-const [testModal, setTestModal] = useState(false)
   return (
-    <div>
-       
-      <button>Take a Test</button>
+    <div className="bg-white h-[100vh] py-4">
+      <Quiz />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
+
+const QuestionsArr = [
+  {
+    quest: "asdsada",
+    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
+  },
+  {
+    quest: "asdsada",
+    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
+  },
+  {
+    quest: "asdsada",
+    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
+  },
+  {
+    quest: "asdsada",
+    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
+  },
+  {
+    quest: "asdsada",
+    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
+  },
+];
