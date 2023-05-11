@@ -13,25 +13,4 @@ const Home = () => {
 
 export default Home;
 
-const QuestionsArr = [
-  {
-    quest: "asdsada",
-    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
-  },
-  {
-    quest: "asdsada",
-    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
-  },
-  {
-    quest: "asdsada",
-    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
-  },
-  {
-    quest: "asdsada",
-    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
-  },
-  {
-    quest: "asdsada",
-    options: ["asdasd", "asdasd", "asdasd", "asdasd"],
-  },
-];
+

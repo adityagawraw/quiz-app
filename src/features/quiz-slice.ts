@@ -4,10 +4,15 @@ export interface Question {
   question: string;
   options: Array<string>;
 }
+export interface Timer {
+  hours: number;
+  min: number;
+  sec: number;
+}
 export interface QuizDetails {
   name: string;
   discription: string;
-  time: number;
+  time: Timer;
   topics: Array<string>;
   count: number;
 }
@@ -29,9 +34,13 @@ const initialState: QuizSliceState = {
     name: "lormasda ada asdasd asd",
     discription:
       "Laravel is a free and open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications.",
-    time: 10,
+    time: {
+      hours: 0,
+      min: 10,
+      sec: 0,
+    },
     topics: [],
-    count:1
+    count: 1,
   },
   questions: [
     { question: "asdasd", options: ["asd", "asda", "asda", "sdasd"] },
