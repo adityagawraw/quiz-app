@@ -36,17 +36,33 @@ const initialState: QuizSliceState = {
       "Laravel is a free and open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications.",
     time: {
       hours: 0,
-      min: 10,
-      sec: 0,
+      min: 2,
+      sec: 10,
     },
     topics: [],
     count: 1,
   },
   questions: [
-    { question: "asdasd", options: ["asd", "asda", "asda", "sdasd"] },
+    {
+      question: "Divide the total seconds by 60 to convert it to minutes?",
+      options: ["asd", "asda", "asda", "sdasd"],
+    },
+    {
+      question: " Apply the Math.floor() method to minutes to round down it.",
+      options: ["asd", "asda", "asda", "sdasd"],
+    },
+    {
+      question:
+        "Take modulo of total seconds by 60 to get the remaining seconds.",
+      options: ["asd", "asda", "asda", "sdasd"],
+    },
+    {
+      question: "If minutes or seconds are less than 10, append 0 before them.",
+      options: ["asd", "asda", "asda", "sdasd"],
+    },
   ],
-  answers: [1, 2, 3, 4],
-  response: [2, 3, 4, 4],
+  answers: [1, 2, 3, 0],
+  response: [-1, -1, -1, -1],
 };
 
 const quizSlice = createSlice({
